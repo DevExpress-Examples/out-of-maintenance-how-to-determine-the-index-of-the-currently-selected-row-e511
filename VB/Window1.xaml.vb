@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.Windows
+﻿Imports System.Windows
 Imports System.Collections
 ' ...
 
@@ -7,6 +6,7 @@ Namespace LastRow
 
 	Partial Public Class Window1
 		Inherits Window
+
 		Public Sub New()
 			InitializeComponent()
 
@@ -43,24 +43,8 @@ Namespace LastRow
 	End Class
 
 	Public Class TestData
-		Private privatecolumn1 As String
 		Public Property column1() As String
-			Get
-				Return privatecolumn1
-			End Get
-			Set(ByVal value As String)
-				privatecolumn1 = value
-			End Set
-		End Property
-		Private privatecolumn2 As String
 		Public Property column2() As String
-			Get
-				Return privatecolumn2
-			End Get
-			Set(ByVal value As String)
-				privatecolumn2 = value
-			End Set
-		End Property
 
 		Public Sub New(ByVal str1 As String, ByVal str2 As String)
 			column1 = str1
